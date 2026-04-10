@@ -104,3 +104,5 @@ src/
 - The site uses smooth scrolling for section navigation.
 - Theme preference is stored in `localStorage`.
 - The contact form sends messages directly through EmailJS, so no backend is required.
+## 🚀 Live Demo
+https://mohammedfayizt.me
