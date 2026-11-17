@@ -1,108 +1,85 @@
-# Portfolio Website
+# Mohammed Fayiz T — Portfolio
 
-Personal portfolio website built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui. The site is designed to present professional experience, projects, skills, and contact details in a clean, conversion-focused layout with dark and light mode support.
+Personal developer portfolio presenting my background, selected projects, technical skills, experience, and contact information.
+
+**Live website:** https://www.mohammedfayizt.me
+
+## Sections
+
+- **Hero:** Introduction and primary portfolio links.
+- **About:** Background and professional interests.
+- **Projects:** Selected work with links to project demos and repositories.
+- **Skills:** Technologies and tools.
+- **Experience:** Professional and education timeline.
+- **Contact:** Contact form integrated with EmailJS.
 
 ## Features
 
-- Responsive single-page portfolio layout
-- Dark and light theme toggle with persistent preference
-- Animated hero section with typing headline
-- Smooth scrolling navigation
-- Project showcase with live demo and code links
-- Experience, education, and skills sections
-- Contact form powered by EmailJS
-- Resume download button
-- Custom styling with Tailwind CSS and shadcn/ui components
+- Responsive single-page layout.
+- Dark and light theme styling.
+- Animated hero section and smooth section navigation.
+- Project showcase with demo and source-code links.
+- Resume download entry point.
+- Contact form using EmailJS.
 
-## Tech Stack
+## Technology
 
 - React 18
 - TypeScript
 - Vite
 - Tailwind CSS
 - shadcn/ui
-- React Router DOM
+- React Router
 - TanStack Query
 - EmailJS
-- Lucide React icons
+- Lucide React
 
-## Getting Started
+## Run locally
 
-### Prerequisites
+### Requirements
 
-- Node.js 18+ recommended
-- A package manager such as npm, pnpm, or bun
+- Node.js 18 or newer
+- npm
 
-### Install
+### Setup
 
 ```bash
+git clone https://github.com/MOHAMMEDFAYIZT/Fayiz_Portfolio_Website.git
+cd Fayiz_Portfolio_Website
 npm install
 ```
 
-### Run locally
+Create a `.env.local` file for the EmailJS contact form:
+
+```env
+VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+```
+
+Place the resume PDF at `public/resume.pdf` if you want the resume download link to work.
+
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Then open the local Vite URL shown in the terminal.
-
-### Build for production
+Build and preview:
 
 ```bash
 npm run build
-```
-
-### Preview the production build
-
-```bash
 npm run preview
 ```
 
-## Environment Variables
+Run lint checks:
 
-The contact form uses EmailJS and requires the following variables in a `.env.local` file:
-
-```env
-VITE_EMAILJS_PUBLIC_KEY=your_public_key
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
+```bash
+npm run lint
 ```
 
-## Resume File
+---
 
-Place your resume at:
-
-```text
-public/resume.pdf
-```
-
-The hero section links to that file for the resume button.
-
-## Project Structure
-
-```text
-src/
-	components/   # Section components and UI building blocks
-	hooks/        # Shared hooks
-	lib/          # Utility helpers
-	pages/        # Route-level pages
-	assets/       # Images and media
-```
-
-## Scripts
-
-- `npm run dev` - start the development server
-- `npm run build` - create a production build
-- `npm run preview` - preview the production build locally
-- `npm run lint` - run ESLint
-- `npm run test` - run Vitest tests
-- `npm run test:watch` - run Vitest in watch mode
-
-## Notes
-
-- The site uses smooth scrolling for section navigation.
-- Theme preference is stored in `localStorage`.
-- The contact form sends messages directly through EmailJS, so no backend is required.
-## 🚀 Live Demo
-https://mohammedfayizt.me
+**Portfolio:** [mohammedfayizt.me](https://www.mohammedfayizt.me)  
+**GitHub:** [MOHAMMEDFAYIZT](https://github.com/MOHAMMEDFAYIZT)  
+**LinkedIn:** [mohammedfayizt](https://www.linkedin.com/in/mohammedfayizt/)
